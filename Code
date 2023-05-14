@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather App</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f5f5f5;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 20px;
+		}
+
+		h1 {
+			margin-top: 0;
+		}
+
+		input[type=text] {
+			padding: 10px;
+			font-size: 16px;
+			border: none;
+			border-radius: 5px;
+			margin-bottom: 10px;
+			width: 100%;
+			max-width: 500px;
+			box-sizing: border-box;
+			background-color: #fff;
+		}
+
+		button {
+			padding: 10px 20px;
+			font-size: 16px;
+			border: none;
+			border-radius: 5px;
+			background-color: #008CBA;
+			color: #fff;
+			cursor: pointer;
+		}
+
+		button:hover {
+			background-color: #006F8E;
+		}
+
+		.weather {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+			margin-top: 20px;
+			width: 100%;
+			max-width: 500px;
+			box-sizing: border-box;
+		}
+
+		.weather__icon {
+			font-size: 64px;
+			margin-bottom: 10px;
+		}
+
+		.weather__condition {
+			font-size: 24px;
+			margin: 0;
+		}
+
+		.weather__temp {
+			font-size: 48px;
+			margin: 0;
+		}
+
+		.weather__humidity,
+		.weather__wind {
+			margin: 0;
+		}
+
+		.chart {
+			margin-top: 20px;
+			width: 100%;
+			max-width: 500px;
+			height: 300px;
+			background-color: #fff;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+			box-sizing: border-box;
+			padding: 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.chart__title {
+			margin-top: 0;
+			margin-bottom: 10px;
+		}
+
+		.chart__canvas {
+			width: 100%;
+			height: 100%;
+			max-height: 200px;
+			box-sizing: border-box;
+		}
+
+		.chart__legend {
+			display: flex;
+			flex-wrap: wrap;
+			margin-top: 10px;
+			width: 100%;
+			box-sizing: border-box;
+		}
+
+		.chart__legend__item {
+			display: flex;
+			align-items: center;
+			margin-right: 10px;
+			margin-bottom: 5px;
+			box-sizing: border-box;
+		}
+
+		.chart__legend__item__color {
+			width: 20px;
+			height: 20px;
+			margin-right:
